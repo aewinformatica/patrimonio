@@ -1,0 +1,49 @@
+{
+    "clientName": "Thunder Client",
+    "collectionName": "Patrimonio-API",
+    "collectionId": "8f4321f8-f009-4a82-98b1-fb71508fae2a",
+    "dateExported": "2024-05-10T15:31:53.929Z",
+    "version": "1.2",
+    "folders": [],
+    "requests": [
+        {
+            "_id": "75359712-8d00-4708-9124-69f3e5bb3dfe",
+            "colId": "8f4321f8-f009-4a82-98b1-fb71508fae2a",
+            "containerId": "",
+            "name": "Listar",
+            "url": "",
+            "method": "GET",
+            "sortNum": 10000,
+            "created": "2024-05-10T15:30:48.593Z",
+            "modified": "2024-05-10T15:30:48.593Z",
+            "headers": [
+                {
+                    "name": "Accept",
+                    "value": "application/json"
+                }
+            ]
+        },
+        {
+            "_id": "28e258b2-576e-47bd-b3ca-d5409d44d966",
+            "colId": "8f4321f8-f009-4a82-98b1-fb71508fae2a",
+            "containerId": "",
+            "name": "Criar",
+            "url": "",
+            "method": "POST",
+            "sortNum": 20000,
+            "created": "2024-05-10T15:30:48.594Z",
+            "modified": "2024-05-10T15:30:48.594Z",
+            "headers": [
+                {
+                    "name": "Content-Type",
+                    "value": "application/json"
+                }
+            ],
+            "body": {
+                "type": "json",
+                "raw": "{\n    \"etiqueta\": \"CC0987\",\n    \"descricao\": \"Notebook Cinza\",\n    \"dataAquisicao\": \"2017-08-29T17:00:00.000\"\n}\n"
+            }
+        }
+    ],
+    "ref": "1SQK9IGgsdR7GwBmbd85rNtjM3gUUMdmAkztQKlX-fPQpPCyN9LHOwJOwvGRbxAq1ekVFVLWkR2M0Sy0s0RDHA"
+}
