@@ -13,4 +13,8 @@ export class ItemService {
   listar(){
    return this.http.get<any[]>(this.urlItems)
   }
+
+  adicionar(item: any){ 
+    return this.http.post(this.urlItems, item);
+  }
 }
