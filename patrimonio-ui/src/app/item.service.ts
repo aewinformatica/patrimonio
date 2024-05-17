@@ -1,4 +1,4 @@
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders } from '@angular/common/http';
 import { Injectable } from '@angular/core';
 
 @Injectable({
@@ -11,7 +11,14 @@ export class ItemService {
   constructor(private http:HttpClient) { }
 
   listar(){
-   return this.http.get<any[]>(this.urlItems)
+    let headers = new HttpHeaders({
+      'Authorization': 'Basic ' + btoa('aewinformatica:password')
+    });
+
+
+   return this.http.get<any[]>(this.urlItems,{
+    headers
+   })
   }
 
   adicionar(item: any){ 
