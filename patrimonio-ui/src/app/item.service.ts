@@ -22,6 +22,12 @@ export class ItemService {
   }
 
   adicionar(item: any){ 
-    return this.http.post(this.urlItems, item);
+    let headers = new HttpHeaders({
+      'Authorization': 'Basic ' + btoa('aewinformatica:password'),
+      "Content-Type": "application/json",
+    });
+    return this.http.post(this.urlItems, item,{
+      headers
+    });
   }
 }
